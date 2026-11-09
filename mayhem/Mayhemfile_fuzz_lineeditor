@@ -1,0 +1,9 @@
+project: savantenvs/htop
+target: fuzz_lineeditor
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_lineeditor/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_lineeditor
+    libfuzzer: true
+    timeout: 10

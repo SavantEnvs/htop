@@ -1,0 +1,9 @@
+project: savantenvs/htop
+target: fuzz_procfs
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_procfs/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_procfs
+    libfuzzer: true
+    timeout: 10

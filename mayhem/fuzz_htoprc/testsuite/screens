@@ -1,0 +1,13 @@
+config_reader_min_version=3
+delay=25
+color_scheme=2
+header_layout=two_67_33
+left_meters=Memory Swap
+left_meter_modes=1 1
+right_meters=Tasks LoadAverage
+right_meter_modes=2 2
+screen:Main=PID USER PERCENT_CPU COMM
+.sort_key=PERCENT_CPU
+.tree_view=1
+screen:IO=PID IO_RATE
+.sort_key=IO_RATE
