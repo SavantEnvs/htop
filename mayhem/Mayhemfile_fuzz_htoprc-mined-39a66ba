@@ -1,0 +1,9 @@
+project: savantenvs/htop
+target: fuzz_htoprc-mined-39a66ba
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_htoprc-mined-39a66ba/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_htoprc
+    libfuzzer: true
+    timeout: 10
